@@ -1,16 +1,8 @@
-
+Homepage → Search → Filter → View Product → Add to Cart → Checkout
 ---
 
-## 📊 Impact  
-- ~30% lower bounce rate in testing  
-- 25% higher user retention in usability sessions  
-
----
-
-## 💡 Future Enhancements  
-- Shopping Cart & Checkout  
-- User Authentication  
-- Payment Gateway Integration  
-
-## 🌐 Live Demo  
-👉 [Click here to view the Online Clothing Store](https://Pidugu Siddardha github.io/online-store/)  
+### 🔮 Future Enhancements (Planned)  
+- Category Filters (Men, Women, Shoes, etc.)  
+- Product Detail Pages  
+- Add to Cart (functional)  
+- Checkout with Order Summary & Payment  

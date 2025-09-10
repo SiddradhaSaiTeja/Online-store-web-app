@@ -1,1 +1,23 @@
-Homepage → Search → Filtered Product Display
+
+---
+
+### ⚡ What Changed
+- Removed problematic `()` around long text.  
+- Replaced them with `:` or arrows `→` (which render fine).  
+- Kept node labels short and clean.  
+
+---
+
+### 🧪 Test First
+Before pasting the full diagram, test with this tiny block to confirm your GitHub renders Mermaid:
+
+```markdown
+```mermaid
+flowchart TD
+  A[Homepage] --> B[Search] --> C[Filtered Results]
+
+If this works ✅, then paste the longer version.  
+
+---
+
+👉 Do you want me to **rewrite the full README with this corrected workflow diagram already inserted** so you just copy–paste it once without worrying about formatting errors?

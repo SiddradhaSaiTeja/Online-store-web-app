@@ -1,23 +1,26 @@
+name: Deploy to GitHub Pages
 
----
+on:
+  push:
+    branches:
+      - main  # or master, depending on your default branch
 
-### ⚡ What Changed
-- Removed problematic `()` around long text.  
-- Replaced them with `:` or arrows `→` (which render fine).  
-- Kept node labels short and clean.  
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
 
----
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-### 🧪 Test First
-Before pasting the full diagram, test with this tiny block to confirm your GitHub renders Mermaid:
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
 
-```markdown
-```mermaid
-flowchart TD
-  A[Homepage] --> B[Search] --> C[Filtered Results]
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./
 
-If this works ✅, then paste the longer version.  
-
----
-
-👉 Do you want me to **rewrite the full README with this corrected workflow diagram already inserted** so you just copy–paste it once without worrying about formatting errors?
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2

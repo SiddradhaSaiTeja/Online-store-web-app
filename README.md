@@ -27,15 +27,18 @@ A fully functional **e-commerce web application** inspired by Flipkart, designed
 ---
 ## 🛒 Workflow (Visual)
 
+## 🛒 Workflow (Visual)
+
 ```mermaid
 flowchart TD
-  A[Homepage] --> B[Product Grid (Image, Name, Price, Add to Cart button - UI only)]
+  A[Homepage] --> B[Product Grid: Image, Name, Price, Add to Cart (UI only)]
   A --> C[Search Bar]
 
   C --> D[User types keyword]
-  D --> E[Filtered Products (Matching items shown)]
+  D --> E[Filtered Products: Matching items shown]
 
   B --> F[Responsive Layout]
-  F --> F1[Desktop: Multi-column grid]
-  F --> F2[Tablet: 2-column grid]
-  F --> F3[Mobile: Single-column cards]
+  F --> F1[Desktop → Multi-column grid]
+  F --> F2[Tablet → 2-column grid]
+  F --> F3[Mobile → Single-column cards]
+
